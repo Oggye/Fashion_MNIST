@@ -136,3 +136,24 @@ Le tableau ci-dessous résume les performances des différents modèles dévelop
 2.  **Installez les dépendances nécessaires** :
     ```bash
     pip install tensorflow numpy matplotlib scikit-learn seaborn
+3.  **Exécutez le notebook** `Fashion_MNIST.ipynb` dans un environnement Jupyter (par exemple, avec VSCode, JupyterLab, ou Google Colab). Le notebook téléchargera automatiquement le dataset Fashion-MNIST lors de la première exécution.
+
+## Technologies Utilisées
+
+*   **Python 3.x**
+*   **TensorFlow / Keras** : Pour la construction, l'entraînement et l'évaluation des réseaux de neurones.
+*   **NumPy** : Pour la manipulation de tableaux et des données numériques.
+*   **Matplotlib** : Pour la visualisation des données, des courbes d'apprentissage et des résultats.
+*   **Scikit-learn** : Pour la génération de la matrice de confusion.
+*   **Seaborn** : Pour la visualisation améliorée de la matrice de confusion.
+
+## Conclusion
+
+Ce projet démontre avec succès le cycle de vie typique d'un projet de deep learning, depuis l'analyse exploratoire jusqu'à l'optimisation et l'évaluation d'un modèle.
+
+Les résultats sont clairs :
+*   **L'optimisation des hyperparamètres est cruciale**, même pour un modèle simple comme un MLP, et peut améliorer significativement les performances.
+
+*   **Les CNN sont bien plus performants que les MLP pour les tâches de vision par ordinateur**. Leur capacité à apprendre des représentations hiérarchiques leur permet d'atteindre une précision bien supérieure sur Fashion-MNIST.
+
+Le modèle CNN final, avec une précision de 91.66%, constitue une base solide. Pour aller plus loin, des techniques plus avancées comme **l'apprentissage par transfert** (en utilisant un modèle pré-entraîné sur ImageNet) ou **l'augmentation de données** pourraient être explorées pour tenter de franchir le seuil des 95% de précision.
