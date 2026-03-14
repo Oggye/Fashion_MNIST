@@ -116,16 +116,18 @@ Le modèle final combine tous les optima trouvés :
 
 ## Résultats
 
-Le modèle CNN final a surpassé de manière significative les modèles MLP.
+Le tableau ci-dessous résume les performances des différents modèles développés, de la baseline la plus simple au modèle final optimisé. On observe une nette progression à chaque étape d'optimisation.
 
 | Modèle | Accuracy (Test) | Loss (Test) | Amélioration vs. MLP de Base |
 | :--- | :--- | :--- | :--- |
 | **MLP de Base** | 86.89% | 0.3599 | - |
 | **MLP Amélioré** | 88.54% | 0.3336 | +1.89% |
+| **CNN de Base (LeNet-5)** | 87.65% | 0.3299 | +0.76% |
 | **CNN Final (Optimisé)** | **91.66%** | **0.4730** | **+4.77%** |
 
 *   Le **MLP Amélioré** a montré une nette progression par rapport à la baseline, prouvant l'efficacité des optimisations hyperparamétriques et architecturales.
-*   Le **CNN Final** a atteint une précision de **91.66%**, confirmant la supériorité des architectures convolutionnelles pour la classification d'images en capturant efficacement les caractéristiques spatiales.
+*   Le **CNN de Base (LeNet-5)** surpasse déjà légèrement le MLP de base, démontrant la puissance des convolutions pour la classification d'images, même sans optimisation poussée.
+*   Le **CNN Final** a atteint une précision de **91.66%**, confirmant la supériorité des architectures convolutionnelles en capturant efficacement les caractéristiques spatiales. L'augmentation de la loss peut indiquer un début de surapprentissage ou une différence dans la métrique de loss au moment de la meilleure accuracy.
 *   L'analyse de la **matrice de confusion** du CNN a révélé que les erreurs de classification se produisent principalement entre des classes visuellement similaires (ex : T-shirt vs. Chemise vs. Pull), ce qui est compréhensible.
 
 ## Installation et Utilisation
